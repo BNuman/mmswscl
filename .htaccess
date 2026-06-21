@@ -1,0 +1,19 @@
+# ============================================================
+#  Medmänniska Sverige
+#  Lösenordslås för volontärportalen.
+#  Endast volontarportal.html påverkas – övriga sidor är öppna.
+#  Koden sätts i toppen av volontarportal.html (en rad).
+# ============================================================
+
+# Kör volontärportalen som PHP så att lösenordslåset fungerar.
+<Files "volontarportal.html">
+    SetHandler application/x-httpd-php
+</Files>
+
+# Lösenords-/konfigfiler ska aldrig kunna laddas ner.
+<FilesMatch "^\.ht">
+    Require all denied
+</FilesMatch>
+
+# Visa din egen 404-sida vid felaktiga adresser.
+ErrorDocument 404 /404.html
