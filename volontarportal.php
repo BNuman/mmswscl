@@ -4,7 +4,7 @@
    ÄNDRA endast raden nedan till din egen kod (t.ex. '4729').
    Inget annat behöver röras.
    ===================================================================== */
-$PASS = '2026';                       // <=== DIN KOD HÄR
+$PASS = 'BYT-UT-MIG';                       // <=== DIN KOD HÄR
 /* -------------------------------------------------------------------- */
 $SECRET = "272379ed220a00b07f1fb1ff71f8b27a81098b9419e01bec";
 $CK = "mms_vp";
