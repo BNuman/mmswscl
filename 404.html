@@ -183,6 +183,13 @@ a.need-card{display:block;text-decoration:none;color:inherit;cursor:pointer}
 .fair-note strong{display:block;color:var(--brown);font-size:19px;font-weight:900;margin-bottom:6px}
 .fair-note p{margin:0;color:var(--brown);font-size:16px;line-height:1.6}
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* More compact heroes on small phones so more of the photo is visible (less zoom/crop) */
+@media (max-width:600px){
+  .hero,.page-hero{padding-top:48px!important;padding-bottom:40px!important}
+  .hero h1,.page-hero h1{font-size:clamp(32px,8.4vw,44px)}
+  .hero p,.page-hero p{font-size:16px;margin-top:16px}
+  .hero-actions{margin-top:24px;gap:10px}
+}
 </style>
 </head>
 <body>

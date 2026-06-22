@@ -183,8 +183,15 @@ a.need-card{display:block;text-decoration:none;color:inherit;cursor:pointer}
 .fair-note strong{display:block;color:var(--brown);font-size:19px;font-weight:900;margin-bottom:6px}
 .fair-note p{margin:0;color:var(--brown);font-size:16px;line-height:1.6}
 @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+/* More compact heroes on small phones so more of the photo is visible (less zoom/crop) */
+@media (max-width:600px){
+  .hero,.page-hero{padding-top:48px!important;padding-bottom:40px!important}
+  .hero h1,.page-hero h1{font-size:clamp(32px,8.4vw,44px)}
+  .hero p,.page-hero p{font-size:16px;margin-top:16px}
+  .hero-actions{margin-top:24px;gap:10px}
+}
 </style>
-</head>
+<style>@media(max-width:600px){.hero{background-position:64% center!important}}</style></head>
 <body>
 <a class="skip-link" href="#huvudinnehall">Hoppa till innehåll</a>
 <nav class="navbar navbar-expand-lg sticky-top"><div class="container"><a class="navbar-brand" href="index.html">
@@ -192,7 +199,7 @@ a.need-card{display:block;text-decoration:none;color:inherit;cursor:pointer}
 <span>Medmänniska Sverige</span>
 </a><button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-label="Öppna meny"><span class="navbar-toggler-icon"></span></button><div class="collapse navbar-collapse justify-content-center" id="mainNav"><ul class="navbar-nav gap-lg-3"><li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li><li class="nav-item"><a class="nav-link" href="index.html#varfor">Varför vi finns</a></li><li class="nav-item"><a class="nav-link" href="index.html#vad-vi-gor">Vad vi gör</a></li><li class="nav-item"><a class="nav-link" href="index.html#projekt">Projekt</a></li><li class="nav-item"><a class="nav-link" href="index.html#kontakt">Behöver du hjälp?</a></li><li class="nav-item"><a class="nav-link" href="index.html#hjalpa-till">Volontär</a></li><li class="nav-item"><a class="nav-link" href="index.html#partners">Samarbeten</a></li></ul></div></div></nav>
 <main id="huvudinnehall" tabindex="-1">
-<section class="hero"><div class="container"><div class="eyebrow">Bli volontär</div><h1>Bli volontär hos Medmänniska Sverige</h1><p>Som volontär hos Medmänniska Sverige hjälper du människor i utsatthet på ett varmt, respektfullt och praktiskt sätt. Du behöver ingen tidigare erfarenhet – vi hjälper dig komma igång.</p><div class="hero-actions"><a class="btn-med" href="#intresseanmalan">Skicka intresseanmälan</a><a class="btn-light-med" href="volontarportal.html">Jag är redan volontär</a></div></div></section>
+<section class="hero"><div class="container"><div class="eyebrow">Bli volontär</div><h1>Bli volontär hos Medmänniska Sverige</h1><p>Som volontär hos Medmänniska Sverige hjälper du människor i utsatthet på ett varmt, respektfullt och praktiskt sätt. Du behöver ingen tidigare erfarenhet – vi hjälper dig komma igång.</p><div class="hero-actions"><a class="btn-med" href="#intresseanmalan">Skicka intresseanmälan</a><a class="btn-light-med" href="volontarportal.php">Jag är redan volontär</a></div></div></section>
 <section class="section"><div class="container"><div class="section-title"><h6>Passar det dig?</h6><h2>Din tid kan göra stor skillnad</h2><p>Du behöver ingen särskild erfarenhet eller bakgrund — bara viljan att finnas där för andra. Det viktigaste är att helt enkelt vara en medmänniska. Det här passar dig som:</p></div><div class="row g-4"><div class="col-md-6 col-lg-3"><div class="help-item"><span aria-hidden="true">🤝</span><div><strong>…vill finnas där för andra</strong><p>Du tycker om att möta människor, lyssna och skapa trygghet.</p></div></div></div><div class="col-md-6 col-lg-3"><div class="help-item"><span aria-hidden="true">💪</span><div><strong>…vill hjälpa praktiskt</strong><p>Du gillar att hugga i där det behövs — stort som smått.</p></div></div></div><div class="col-md-6 col-lg-3"><div class="help-item"><span aria-hidden="true">💻</span><div><strong>…vill bidra på distans</strong><p>Du kan stötta bakom kulisserna hemifrån, när det passar dig.</p></div></div></div><div class="col-md-6 col-lg-3"><div class="help-item"><span aria-hidden="true">⏳</span><div><strong>…har lite tid över</strong><p>Även en stund då och då gör skillnad. Du bestämmer takten.</p></div></div></div></div>
 <div class="fair-note"><strong>Vi hjälper rättvist</strong><p>Hos Medmänniska Sverige får alla hjälp på lika villkor. Stöd ges utifrån behov — aldrig utifrån vem man känner. Som volontär delar du ut och hjälper opartiskt, med samma respekt och omtanke för varje människa. Det är en självklar och viktig del av att vara med hos oss.</p></div><div class="form-med" id="intresseanmalan">
   <h3>Intresseanmälan volontär</h3>
